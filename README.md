@@ -120,7 +120,7 @@ equivalent to the following example with a custom template block:
 ```
 
 Note that the `labelProperty` attribute is superfluous when using a custom template block; instead, `{{user.name}}` is
-used directly in the template block.
+used directly in the template block. The attribute `valueProperty` is still relevant and you can use it to overwrite the default behavior which is storing the whole object in the array. you can set, for example, `valueProperty='id'` to store in the array the `ids` of the selected objects.
 
 By default the `multiselect-checkboxes` tag will render as an `ul` element. This can be customized by specifying the
 `tagName` attribute:
